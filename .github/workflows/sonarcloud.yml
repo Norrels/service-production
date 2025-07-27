@@ -40,6 +40,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn -B verify -Pcoverage org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-            -Dsonar.projectKey=Norrels_service-production \
+            -Dsonar.projectKey=norrels_service-production \
             -Dsonar.organization=norrels \
             -Dsonar.host.url=https://sonarcloud.io
